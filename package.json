@@ -1,18 +1,24 @@
 {
   "name": "oct23-t3w2-intro-to-nodejs",
   "version": "1.0.0",
-  "description": "Some cool description",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "dev": "npm run manoj",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "windows:watch": "CHOKIDAR_USEPOLLING=true nodemon index.js"
+    "start": "node index.js",
+    "manoj": "nodemon index.js",
+    "watch": "nodemon index.js",
+    "windows:watch": "CHOKIDAR_USEPOLLING=true nodemon index.js",
+    "devPromptSync": "CHOKIDAR_USEPOLLING=true nodemon --no-stdin index.js"
   },
-  "author": "Sam",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "pokemon": "^3.0.0"
+    "pokemon": "^3.0.0",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
